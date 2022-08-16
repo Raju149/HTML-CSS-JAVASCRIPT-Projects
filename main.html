@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="style.css">
+		<title>To Do List</title>
+		<script type="text/javascript" src="https://kit.fontawesome.com/a076d05399.js"></script>
+		<script type="text/javascript" src="jQuery.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	</head>
+	<body>
+
+		<div class="wrapper">
+			<p style="font-size:20px; text-align: center;">&#128584 &#128585 &#128586</p>
+			<header>To Do List</header>
+			<div class="inputfield">
+				<input id="enterData" type="text" placeholder="Add Your Upcoming Task" name="text">
+				<button class="addItem" onclick="addItem()"><i class="fas fa-plus"></i></button>
+			</div>
+			<ul class="todolist" id="candiate">				<li class="listItem">task1 have to complete<span><i class="fas fa-trash"></i></span></li>
+				<li class="listItem">task2 have to complete<span><i class="fas fa-trash"></i></span></li>
+				<li class="listItem">task3 have to complete<span><i class="fas fa-trash"></i></span></li>
+				<li class="listItem">task4 have to complete<span><i class="fas fa-trash"></i></span></li>
+				<li class="listItem">task5 have to complete<span><i class="fas fa-trash"></i></span></li>
+			</ul>
+			<div class="footer">
+				<span>You have 5 pending tasks</span>
+				<button id="clear">Clear All</button>
+			</div>
+			<div id="clock" class="clock" onload="systemTime()"></div>
+
+			 <div class="modal" id="myModal">
+				<div class="modal-dailog">
+					<div class="modal=content">
+						<div class="modal-header">
+							<h2>Are You Sure > </h2>
+							<button type="button" class="close" data-dismiss="modal">X</button>
+						</div>
+						<div class="modal-body">
+							<h3>Yor Are Deleting All the Tasks....</h3>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-danger" data-dismiss="modal">YES</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<script type="text/javascript" src="jscript.js"></script>
+	</body>
+</html>
+
+
+
